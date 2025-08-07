@@ -1,26 +1,28 @@
 """This code is showing the basic understanding of Linklist data structure"""
 
-"""I am making a Class for the Node"""
 class Node:
-    """This function is making data and next pointer"""
+   # pylint: disable=too-few-public-methods
     def __init__(self, data):
         self.data = data
         self.next = None
 
 
 def insert_at_head(head, data):
+    """Insert a new node with the given data at the head of the list."""
     new_node = Node(data)
     new_node.next = head
     return new_node
 
 
 def insert_at_tail(tail, data):
+    """Insert a new node with the given data at the tail of the list."""
     new_node = Node(data)
     tail.next = new_node
     return new_node  # new tail
 
 
 def insert_at_position(head, position, data):
+    """Insert a new node at the Perticular location."""
     if position == 1:
         return insert_at_head(head, data)
 
@@ -42,6 +44,7 @@ def insert_at_position(head, position, data):
 
 
 def delete_node(head, position):
+    """Deleting a new node with the given data at the head of the list."""
     if head is None:
         print("List is empty")
         return None
@@ -71,6 +74,7 @@ def delete_node(head, position):
 
 
 def print_list(head):
+    """Printing the lins."""
     temp = head
     while temp is not None:
         print(temp.data, end=" ")
