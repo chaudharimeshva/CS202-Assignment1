@@ -3,6 +3,7 @@
 class Node:
    # pylint: disable=too-few-public-methods
     def __init__(self, data):
+       """Initialising data and next pointer."""
         self.data = data
         self.next = None
 
