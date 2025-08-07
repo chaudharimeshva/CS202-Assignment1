@@ -1,5 +1,7 @@
 """This code is showing the basic understanding of Linklist data structure"""
 
+
+"""I am making a Class for the Node"""
 class Node:
     def __init__(self, data):
         self.data = data
